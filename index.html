@@ -1,146 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>hello</title>
-    <link rel="stylesheet" href="dist/main.css" />
-    <script src="https://kit.fontawesome.com/3d2feb4bc3.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="images/code-solid.svg" type="image/x-icon" />
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <h2 class="container__title">Matt</h2>
-        <nav class="navigation" id="navigation">
-          <ul class="navigation__list">
-            <li class="navigation__item navigation__item-home"><a href="#navigation">Home</a></li>
-            <li class="navigation__item"><a href="#about-me">About me</a></li>
-            <li class="navigation__item"><a href="#work">Work</a></li>
-            <li class="navigation__item"><a href="#social">Social</a></li>
-            <li class="navigation__item"><a href="#contact">contact</a></li>
-          </ul>
-        </nav>
 
-        <button class="hamburger">
-          <span class="hamburger__bar"></span>
-        </button>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>hello</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <script src="https://kit.fontawesome.com/3d2feb4bc3.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="images/web-development.ico" type="image/x-icon" />
+</head>
 
-    <nav class="navigation-mobile">
-      <ul class="navigation-mobile__list">
-        <li class="navigation-mobile__item">
-          <a href="#navigation" onclick="jumpToTop()">Home</a>
-        </li>
-        <li class="navigation-mobile__item">
-          <a href="#about-me" onclick="hideMenu()">About me</a>
-        </li>
-        <li class="navigation-mobile__item"><a href="#work" onclick="hideMenu()">Work</a></li>
-        <li class="navigation-mobile__item"><a href="#social" onclick="hideMenu()">Social</a></li>
-        <li class="navigation-mobile__item"><a href="#contact" onclick="hideMenu()">Contact</a></li>
-      </ul>
-    </nav>
+<body>
+  <header>
+    <div class="container">
+      <h2 class="container__title">Matt</h2>
+      <nav class="navigation" id="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item navigation__item-home"><a href="#navigation">Home</a></li>
+          <li class="navigation__item"><a href="#about-me">About me</a></li>
+          <li class="navigation__item"><a href="#work">Work</a></li>
+          <li class="navigation__item"><a href="#social">Social</a></li>
+          <li class="navigation__item"><a href="#contact">contact</a></li>
+        </ul>
+      </nav>
 
-    <section class="top-content" id="top-content">
-      <div class="top-content__title">
-        <span class="top-content__title-desktopSpan">Hello!</span>
-        <span class="top-content__title-mobileSpan">Hi!</span>
-        <p class="top-content__title-myName">My name is <span> Matthew.</span></p>
-        <p>Designer & Frontend Developer</p>
-      </div>
-      <div class="top-content__image">
-        <div class="top-content__image-wrapper">
-          <img src="images/me.jpg" alt="developer" class="top-content__image-desktop" />
-          <div class="top-content__image-background"></div>
-        </div>
-      </div>
-    </section>
+      <button class="hamburger">
+        <span class="hamburger__bar"></span>
+      </button>
+    </div>
+  </header>
 
-    <section class="about-me" id="about-me">
-      <div class="about-me__image">
-        <img src="images/about-me-desktop.svg" alt="developer" class="about-me__image-desktop" />
-        <img src="images/about-me-mobile.svg" alt="developer" class="about-me__image-mobile" />
+  <nav class="navigation-mobile">
+    <ul class="navigation-mobile__list">
+      <li class="navigation-mobile__item">
+        <a href="#navigation" onclick="jumpToTop()">Home</a>
+      </li>
+      <li class="navigation-mobile__item">
+        <a href="#about-me" onclick="hideMenu()">About me</a>
+      </li>
+      <li class="navigation-mobile__item"><a href="#work" onclick="hideMenu()">Work</a></li>
+      <li class="navigation-mobile__item"><a href="#social" onclick="hideMenu()">Social</a></li>
+      <li class="navigation-mobile__item"><a href="#contact" onclick="hideMenu()">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="top-content" id="top-content">
+    <div class="top-content__title">
+      <span class="top-content__title-desktopSpan">Hello!</span>
+      <span class="top-content__title-mobileSpan">Hi!</span>
+      <p class="top-content__title-myName">My name is <span> Matthew.</span></p>
+      <p>Designer & Frontend Developer</p>
+    </div>
+    <div class="top-content__image">
+      <div class="top-content__image-wrapper">
+        <img src="images/goku_transparent.png" alt="developer" class="top-content__image-desktop" />
+        <div class="top-content__image-background"></div>
       </div>
-      <div class="about-me__title">
-        <div class="about-me__title-heading" id="about-me__title-heading">
+    </div>
+  </section>
+
+  <section class="about-me" id="about-me">
+    <div class="about-me__image">
+      <img src="images/about-me-desktop.svg" alt="developer" class="about-me__image-desktop" />
+      <img src="images/about-me-mobile.svg" alt="developer" class="about-me__image-mobile" />
+    </div>
+    <div class="about-me__title">
+      <div class="about-me__title-heading" id="about-me__title-heading">
         <h1>About Me</h1>
         <p>I'm a Frontend Developer located in Poland.</p>
         <p>Fan of listening podcasts, reading books, outdoor activities and psychology.</p>
         <p>Languages:</p>
         <div class="about-me__title__technologies">
-          <a href="https://www.w3.org/html/"><img src="images/html.svg" alt="html" class="about-me__title__technologies__image" /></a>
-          <a href="https://www.w3.org/Style/CSS/"><img src="images/css.svg" alt="css" class="about-me__title__technologies__image" /></a>
-          <a href="https://sass-lang.com/"><img src="images/sass.svg" alt="sass" class="about-me__title__technologies__image" /></a>
-          <a href="https://www.typescriptlang.org/"><img src="images/ts.svg" alt="typescript" class="about-me__title__technologies__image" /></a>
-          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="images/js.svg" alt="javascript" class="about-me__title__technologies__image" /></a>
+          <a href="https://www.w3.org/html/"><img src="images/html.svg" alt="html"
+              class="about-me__title__technologies__image" /></a>
+          <a href="https://www.w3.org/Style/CSS/"><img src="images/css.svg" alt="css"
+              class="about-me__title__technologies__image" /></a>
+          <a href="https://sass-lang.com/"><img src="images/sass.svg" alt="sass"
+              class="about-me__title__technologies__image" /></a>
+          <a href="https://www.typescriptlang.org/"><img src="images/ts.svg" alt="typescript"
+              class="about-me__title__technologies__image" /></a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="images/js.svg" alt="javascript"
+              class="about-me__title__technologies__image" /></a>
         </div>
       </div>
-    </section>
+  </section>
 
-    <section class="work" id="work">
-      <div class="work__image">
-        <img src="images/undraw-mobile-work.svg" alt="developer" class="work__image-mobile" />
-        <img src="images/work-desktop.svg" alt="developer" class="work__image-desktop" />
-      </div>
-      <div class="work__title">
-        <h1>Work</h1>
-        <p>
-          <a href="https://github.com/mjanoszek"><i class="fa-brands fa-github"></i> github</a>
-        </p>
-        <p>
-          <a href="https://codepen.io/vvoid"><i class="fa-brands fa-codepen"></i> codepen</a>
-        </p>
-      </div>
-    </section>
+  <section class="work" id="work">
+    <div class="work__image">
+      <img src="images/undraw-mobile-work.svg" alt="developer" class="work__image-mobile" />
+      <img src="images/work-desktop.svg" alt="developer" class="work__image-desktop" />
+    </div>
+    <div class="work__title">
+      <h1>Work</h1>
+      <p>
+        <a href="https://github.com/mjanoszek"><i class="fa-brands fa-github"></i> github</a>
+      </p>
+      <p>
+        <a href="https://codepen.io/vvoid"><i class="fa-brands fa-codepen"></i> codepen</a>
+      </p>
+    </div>
+  </section>
 
-    <section class="social" id="social">
-      <div class="social__image">
-        <img src="images/social-mobile.svg" alt="developer" class="social__image-mobile" />
-        <img src="images/social-desktop.svg" alt="developer" class="social__image-desktop" />
-      </div>
-      <div class="social__title">
-        <h1>Social</h1>
-        <p>
-          <a href="https://twitter.com/janoszekm"><i class="fa-brands fa-twitter"></i> twitter</a>
-        </p>
-        <p>
-          <a href="#"><i class="fa-brands fa-youtube"></i> facebook</a>
-        </p>
-        <p>
-          <a href="#"><i class="fa-brands fa-facebook"></i> youtube</a>
-        </p>
-      </div>
-    </section>
+  <section class="social" id="social">
+    <div class="social__image">
+      <img src="images/social-mobile.svg" alt="developer" class="social__image-mobile" />
+      <img src="images/social-desktop.svg" alt="developer" class="social__image-desktop" />
+    </div>
+    <div class="social__title">
+      <h1>Social</h1>
+      <p>
+        <a href="https://twitter.com/janoszekm"><i class="fa-brands fa-twitter"></i> twitter</a>
+      </p>
+      <p>
+        <a href="#"><i class="fa-brands fa-youtube"></i> facebook</a>
+      </p>
+      <p>
+        <a href="#"><i class="fa-brands fa-facebook"></i> youtube</a>
+      </p>
+    </div>
+  </section>
 
-    <section class="contact" id="contact">
-      <div class="contact__image">
-        <img src="images/contact-mobile.svg" alt="developer" class="contact__image-mobile" />
-        <img src="images/contact-desktop.svg" alt="developer" class="contact__image-desktop" />
-      </div>
-      <div class="contact__title">
-        <h1>Contact</h1>
-        <form action="https://formsubmit.co/10x1@protonmail.ch" method="POST">
-          <div class="contact__title__form">
-            <div class="formData">
-              <input type="text" name="userName" id="userName" placeholder="Name" required />
-              <input type="email" name="userEmail" id="userEmail" placeholder="Email" required />
-            </div>
-            <textarea name="message" cols="30" rows="5" placeholder="Message"></textarea>
-
-            <div class="contact__title__button">
-                <button type="submit" class="contact__title__button-btn">Send</button>
-              </div>
-            </div>
+  <section class="contact" id="contact">
+    <div class="contact__image">
+      <img src="images/contact-mobile.svg" alt="developer" class="contact__image-mobile" />
+      <img src="images/contact-desktop.svg" alt="developer" class="contact__image-desktop" />
+    </div>
+    <div class="contact__title">
+      <h1>Contact</h1>
+      <form action="https://formsubmit.co/10x1@protonmail.ch" method="POST">
+        <div class="contact__title__form">
+          <div class="formData">
+            <input type="text" name="userName" id="userName" placeholder="Name" required />
+            <input type="email" name="userEmail" id="userEmail" placeholder="Email" required />
           </div>
-        </form>
-      </div>
-    </section>
+          <textarea name="message" cols="30" rows="5" placeholder="Message"></textarea>
 
-    <footer class="footer">
-      <p>Mateusz Janoszek</p>
-    </footer>
-  </body>
-  <script src="/js/app.js"></script>
+          <div class="contact__title__button">
+            <button type="submit" class="contact__title__button-btn">Send</button>
+          </div>
+        </div>
+    </div>
+    </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Mateusz Janoszek</p>
+  </footer>
+</body>
+<script src="/js/app.js"></script>
+
 </html>
