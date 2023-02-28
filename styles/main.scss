@@ -257,8 +257,8 @@ form {
       justify-content: center;
       gap: 10px;
       img {
-        height: 40px;
-        width: 40px;
+        height: 30px;
+        width: 30px;
       }
     }
   }
@@ -373,6 +373,14 @@ footer {
   }
   .about-me {
     margin-bottom: 100px;
+    &__title {
+      &__technologies {
+        img {
+          height: 40px;
+          width: 40px;
+        }
+      }
+    }
     p {
       width: 300px;
     }
@@ -511,12 +519,6 @@ footer {
       width: 220px;
       margin-left: 250px;
       font-size: 22px;
-      &__technologies {
-        img {
-          height: 40px;
-          width: 40px;
-        }
-      }
     }
     &__image {
       height: 300px;
